@@ -3904,6 +3904,23 @@ docs = ["mkdocs", "mkdocs-jupyter", "mkdocs-material", "mkdocstrings[python]"]
 tests = ["pytest"]
 
 [[package]]
+name = "langchainplus-sdk"
+version = "0.0.3"
+description = "Client library to connect to the LangChainPlus LLM Tracing and Evaluation Platform."
+category = "main"
+optional = false
+python-versions = ">=3.8.1,<4.0"
+files = [
+    {file = "langchainplus_sdk-0.0.3-py3-none-any.whl", hash = "sha256:3ae7ae3503619df2bf531d5466b9235e8f242c7167f664f35050409cc9f80780"},
+    {file = "langchainplus_sdk-0.0.3.tar.gz", hash = "sha256:87481a3ac2a1855ab12985c7aaf7a06a4bd5caa16394db50f055224ab95f1687"},
+]
+
+[package.dependencies]
+pydantic = ">=1,<2"
+requests = ">=2,<3"
+tenacity = ">=8.1.0,<9.0.0"
+
+[[package]]
 name = "langcodes"
 version = "3.3.0"
 description = "Tools for labeling human languages with IETF language tags"
@@ -6950,6 +6967,7 @@ files = [
     {file = "pylance-0.4.12-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:2b86fb8dccc03094c0db37bef0d91bda60e8eb0d1eddf245c6971450c8d8a53f"},
     {file = "pylance-0.4.12-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:0bc82914b13204187d673b5f3d45f93219c38a0e9d0542ba251074f639669789"},
     {file = "pylance-0.4.12-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5a4bcce77f99ecd4cbebbadb01e58d5d8138d40eb56bdcdbc3b20b0475e7a472"},
+    {file = "pylance-0.4.12-cp38-abi3-win_amd64.whl", hash = "sha256:9616931c5300030adb9626d22515710a127d1e46a46737a7a0f980b52f13627c"},
 ]
 
 [package.dependencies]
@@ -10962,4 +10980,4 @@ text-helpers = ["chardet"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8.1,<4.0"
-content-hash = "379bfcf130acc24f2f8408e2bb7e3ae9d769070e6bf5f66868491bddb1b2fc53"
+content-hash = "5859360403255ac998156d49afafd6b30d8d4b33a07b71b6350ddbb2d0aa0579"
